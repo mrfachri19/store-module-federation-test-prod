@@ -2,6 +2,10 @@
   "name": "store",
   "version": "1.0.0",
   "scripts": {
+    "webpack-dev-server": "webpack-dev-server",
+    "dev": "webpack serve --mode=development",
+    "prod": "NODE_ENV=production webpack --mode=production",
+    "serve": "npm run prod && serve -s dist",
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development",
     "build:start": "cd dist && PORT=3007 npx serve",
@@ -28,7 +32,8 @@
     "tailwindcss": "^2.0.2",
     "webpack": "^5.57.1",
     "webpack-cli": "^4.9.0",
-    "webpack-dev-server": "^4.3.1"
+    "webpack-dev-server": "^4.3.1",
+    "workbox-webpack-plugin": "^6.5.1"
   },
   "dependencies": {
     "@babel/runtime": "^7.13.10",
