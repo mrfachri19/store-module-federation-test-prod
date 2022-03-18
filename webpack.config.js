@@ -78,6 +78,7 @@ module.exports = (_, argv) => ({
         { from: "./src/manifest.json", to: "" },
         { from: "./src/diarium192.png", to: "" },
         { from: "./src/diarium512.png", to: "" },
+        { from: "./src/apple-touch-icon.png", to: "" },
       ],
     }),
     new InjectManifest({
