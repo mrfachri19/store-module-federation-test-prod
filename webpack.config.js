@@ -74,23 +74,11 @@ module.exports = (_, argv) => ({
     }),
     new CopyPlugin({
       patterns: [
-        {
-          from: "https://store-module-federation-test-prod-mgwhou1dy-mrfachri19.vercel.app/favicon.ico",
-          to: "",
-        },
+        { from: "./public/favicon.ico", to: "" },
         { from: "./src/manifest.json", to: "" },
-        {
-          from: "https://store-module-federation-test-prod-mgwhou1dy-mrfachri19.vercel.app/diarium192.png",
-          to: "",
-        },
-        {
-          from: "https://store-module-federation-test-prod-mgwhou1dy-mrfachri19.vercel.app/diarium512.png",
-          to: "",
-        },
-        {
-          from: "https://store-module-federation-test-prod-mgwhou1dy-mrfachri19.vercel.app/apple-touch-icon.png",
-          to: "",
-        },
+        { from: "./public/diarium192.png", to: "" },
+        { from: "./public/diarium512.png", to: "" },
+        { from: "./public/apple-touch-icon.png", to: "" },
       ],
     }),
     new InjectManifest({
