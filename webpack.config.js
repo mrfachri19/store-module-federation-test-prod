@@ -2,6 +2,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
 const Dotenv = require("dotenv-webpack");
 const { InjectManifest } = require("workbox-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 const deps = require("./package.json").dependencies;
 module.exports = (_, argv) => ({
@@ -71,9 +72,16 @@ module.exports = (_, argv) => ({
       path: "./.env", // Path to .env file (this is the default)
       systemvars: true,
     }),
-
+    new CopyPlugin({
+      patterns: [
+        { from: "./src/favicon.ico", to: "" },
+        { from: "./src/manifest.json", to: "" },
+        { from: "./src/diarium192.png", to: "" },
+        { from: "./src/diarium512.png", to: "" },
+      ],
+    }),
     new InjectManifest({
-      swSrc: "./src/service-worker.js",
+      swSrc: "./src/src-sw.js",
       swDest: "sw.js",
     }),
   ],
