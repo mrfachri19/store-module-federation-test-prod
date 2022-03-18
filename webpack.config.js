@@ -74,11 +74,11 @@ module.exports = (_, argv) => ({
     }),
     new CopyPlugin({
       patterns: [
-        { from: "./public/favicon.ico", to: "" },
+        { from: "./src/favicon.ico", to: "" },
         { from: "./src/manifest.json", to: "" },
-        { from: "./public/diarium192.png", to: "" },
-        { from: "./public/diarium512.png", to: "" },
-        { from: "./public/apple-touch-icon.png", to: "" },
+        { from: "./src/diarium192.png", to: "" },
+        { from: "./src/diarium512.png", to: "" },
+        { from: "./src/apple-touch-icon.png", to: "" },
       ],
     }),
     new InjectManifest({
