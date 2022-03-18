@@ -4,25 +4,26 @@
   "theme_color": "#040404",
   "background_color": "#0c0c0c",
   "display": "standalone",
-  "start_url": "./",
+  "scope": "/",
+  "start_url": "/",
   "icons": [
     {
-      "src": "maskable.png",
+      "src": "./maskable.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "diarium256.png",
+      "src": "./diarium256.png",
       "type": "image/png",
       "sizes": "256x256"
     },
     {
-      "src": "diarium384.png",
+      "src": "./diarium384.png",
       "type": "image/png",
       "sizes": "384x384"
     },
     {
-      "src": "diarium512.png",
+      "src": "./diarium512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
