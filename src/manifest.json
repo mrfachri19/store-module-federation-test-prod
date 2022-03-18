@@ -3,22 +3,22 @@
 	"name": "Redux Store",
 	"icons": [
 		{
-			"src": "favicon.ico",
+			"src": "./favicon.ico",
 			"sizes": "64x64 32x32 24x24 16x16",
 			"type": "image/x-icon"
 		},
 		{
-			"src": "diarium192.png.png",
+			"src": "./diarium192.png.png",
 			"type": "image/png",
 			"sizes": "192x192"
 		},
 		{
-			"src": "diarium512.png",
+			"src": "./diarium512.png",
 			"type": "image/png",
 			"sizes": "512x512"
 		}
 	],
-	"start_url": "https://store-module-federation-test-prod-1hhxolfdj-mrfachri19.vercel.app/",
+	"start_url": ".",
 	"display": "standalone",
 	"theme_color": "#e50914",
 	"background_color": "#221f1f"
