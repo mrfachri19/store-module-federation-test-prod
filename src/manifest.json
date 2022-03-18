@@ -1,31 +1,25 @@
 {
-  "name": "Diarium",
-  "short_name": "Diarium",
-  "theme_color": "#040404",
-  "background_color": "#0c0c0c",
-  "start_url": "https://store-module-federation-test-prod.vercel.app/",
+	"short_name": "Store",
+	"name": "Redux Store",
+	"icons": [
+		{
+			"src": "favicon.ico",
+			"sizes": "64x64 32x32 24x24 16x16",
+			"type": "image/x-icon"
+		},
+		{
+			"src": "diarium192.png.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "diarium512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	],
+	"start_url": ".",
 	"display": "standalone",
-  "icons": [
-    {
-      "src": "maskable.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "diarium256.png",
-      "type": "image/png",
-      "sizes": "256x256"
-    },
-    {
-      "src": "diarium384.png",
-      "type": "image/png",
-      "sizes": "384x384"
-    },
-    {
-      "src": "diarium512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ]
- 
+	"theme_color": "#e50914",
+	"background_color": "#221f1f"
 }
