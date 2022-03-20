@@ -36,6 +36,10 @@ module.exports = (_, argv) => ({
         use: ["style-loader", "css-loader", "postcss-loader"],
       },
       {
+        test: /\.(png|j?g|svg|gif)?$/,
+        use: "file-loader?name=./images/[name].[ext]",
+      },
+      {
         test: /\.(ts|tsx|js|jsx)$/,
         exclude: /node_modules/,
         use: {
