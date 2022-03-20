@@ -4,17 +4,12 @@
   "theme_color": "#040404",
   "background_color": "#0c0c0c",
   "display": "standalone",
-  "start_url": "/",
+  "start_url": ".",
   "icons": [
     {
       "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/icon"
-    },
-    {
-      "src": "maskable.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "type": "icon"
     },
     {
       "src": "diarium256.png",
